@@ -1,6 +1,6 @@
 FROM alpine
-RUN apk --no-cache --purge add alpine-sdk automake autoconf diffutils vim git linux-headers ncurses-dev
-ENTRYPOINT [ "/bin/sh" ]
+RUN apk --no-cache --purge add alpine-sdk automake autoconf diffutils git linux-headers ncurses-dev
+CMD ["/bin/sh"]
 ARG BUILD_DATE
 ARG SOURCE_TAG
 ARG SOURCE_COMMIT
